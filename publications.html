@@ -6,15 +6,16 @@
   <meta name="author" content="Yiwei Lu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="icon" type="image/png" href="img/Yiwei_headshot.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="wrapper">
     <aside class="sidebar">
       <div class="sidebar-content">
-        <a href="index.html"><img src="img/Yiwei_headshot.png" alt="profile photo" class="profile-image"></a>
+        <a href="index.html"><img src="img/Yiwei_headshot.png" alt="Portrait photo of Yiwei Lu" class="profile-image"></a>
         <div class="contact-info">
           <div class="contact-email">
             <span><i class="fa-solid fa-envelope"></i> Email:</span>
@@ -29,7 +30,7 @@
       </div>
     </aside>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <header class="main-header">
         <h1>Yiwei Lu</h1>
         <nav class="main-nav">
@@ -41,11 +42,12 @@
 
       <section id="publications">
         <h2>Publications</h2>
-        <p>(* denotes equal contribution)</p>
+        <p class="pub-note">(* denotes equal contribution)</p>
         
         <div class="publication-list">
+          <h3 class="pub-year">2025</h3>
           <article class="publication-item">
-            <a href="img/target_attack.png"><img src="img/target_attack.png" class="pub-img"></a>
+            <a href="img/target_attack.png"><img src="img/target_attack.png" class="pub-img" alt="Targeted data poisoning figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Not All Samples Are Equal: Quantifying Instance-level Difficulty in Targeted Data Poisoning</div>
               <div class="pub-authors">William Xu, <strong>Yiwei Lu</strong>, <a href="https://yihan-wang.com/">Yihan Wang</a>, <a href="https://matthewyryang.com/">Matthew Y.R. Yang</a>, Zuoqiu Liu, <a href="https://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -54,7 +56,7 @@
             </div>
           </article>
           <article class="publication-item">
-            <a href="img/memorization.jpg"><img src="img/memorization.jpg" class="pub-img"></a>
+            <a href="img/memorization.jpg"><img src="img/memorization.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Demystifying Foreground-Background Memorization in Diffusion Models</div>
               <div class="pub-authors">Jimmy Z. Di*, <strong>Yiwei Lu*</strong>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a>, <a href="https://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://adam-dziedzic.com/">Adam Dziedzic</a>, <a href="https://franziska-boenisch.de/">Franziska Boenisch</a></div>
@@ -64,7 +66,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/bridgepure.png"><img src="img/bridgepure.png" class="pub-img"></a>
+            <a href="img/bridgepure.png"><img src="img/bridgepure.png" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">BridgePure: Revealing the Fragility of Black-box Data Protection</div>
               <div class="pub-authors"><a href="https://yihan-wang.com/">Yihan Wang*</a>, <strong>Yiwei Lu*</strong>, <a href="http://www.mmrc.iss.ac.cn/~xgao/">Xiaoshan Gao</a>, <a href="https://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -74,7 +76,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/MUC.png"><img src="img/MUC.png" class="pub-img"></a>
+            <a href="img/MUC.png"><img src="img/MUC.png" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">MUC: Machine Unlearning for Contrastive Learning with Black-box Evaluation</div>
               <div class="pub-authors"><a href="https://yihan-wang.com/">Yihan Wang*</a>, <strong>Yiwei Lu*</strong>, <a href="https://gordon-guojun-zhang.github.io/">Guojun Zhang</a>, <a href="https://franziska-boenisch.de/">Franziska Boenisch</a>, <a href="https://adam-dziedzic.com/">Adam Dziedzic</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a>, <a href="http://www.mmrc.iss.ac.cn/~xgao/">Xiaoshan Gao</a></div>
@@ -84,7 +86,7 @@
           </article>
           
           <article class="publication-item">
-            <a href="img/MUL.png"><img src="img/MUL.png" class="pub-img"></a>
+            <a href="img/MUL.png"><img src="img/MUL.png" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Machine Unlearning Fails to Remove Data Poisoning Attacks</div>
               <div class="pub-authors"><a href="https://sites.google.com/view/martinpawelczyk/">Martin Pawelczyk*</a>, <a href="https://uwaterloo.ca/scholar/z2di">Jimmy Z. Di*</a>, <strong>Yiwei Lu</strong>, <a href="https://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://ayush.sekhari.com/">Ayush Sekhari</a>, <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=1326892">Seth Neel</a></div>
@@ -93,8 +95,9 @@
             </div>
           </article>
 
-           <article class="publication-item">
-            <a href="img/poison_q.png"><img src="img/poison_q.png" class="pub-img"></a>
+           <h3 class="pub-year">2024</h3>
+          <article class="publication-item">
+            <a href="img/poison_q.png"><img src="img/poison_q.png" class="pub-img" alt="Neural network quantization figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">On the Robustness of Neural Networks Quantization against Data Poisoning Attacks</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="https://yihan-wang.com/">Yihan Wang</a>, <a href="https://gordon-guojun-zhang.github.io/">Guojun Zhang</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -104,7 +107,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/disguise.png"><img src="img/disguise.png" class="pub-img"></a>
+            <a href="img/disguise.png"><img src="img/disguise.png" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Disguised Copyright Infringement of Latent Diffusion Models</div>
               <div class="pub-authors"><strong>Yiwei Lu*</strong>, <a href="https://matthewyryang.com/">Matthew Y.R. Yang*</a>, Zuoqiu Liu*, <a href="http://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -114,7 +117,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/satml.png"><img src="img/satml.png" class="pub-img"></a>
+            <a href="img/satml.png"><img src="img/satml.png" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Indiscriminate Data Poisoning Attacks on Pre-trained Feature Extractors</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="https://matthewyryang.com/">Matthew Y.R. Yang</a>, <a href="http://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -123,8 +126,9 @@
             </div>
           </article>
 
+          <h3 class="pub-year">2023</h3>
           <article class="publication-item">
-            <a href="img/PC++.jpg"><img src="img/PC++.jpg" class="pub-img"></a>
+            <a href="img/PC++.jpg"><img src="img/PC++.jpg" class="pub-img" alt="Neural network binarization figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Understanding Neural Network Binarization with Forward and Backward Proximal Quantizers</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a>, <a href="https://openreview.net/profile?id=~Xinlin_Li2">Xinlin Li</a>, <a href="https://datawisdom.ca/index.htm">Vahid Partovi Nia</a></div>
@@ -134,7 +138,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/fmicl.jpg"><img src="img/fmicl.jpg" class="pub-img"></a>
+            <a href="img/fmicl.jpg"><img src="img/fmicl.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">f-MICL: Understanding and Generalizing InfoNCE-based Contrastive Learning</div>
               <div class="pub-authors"><strong>Yiwei Lu*</strong>, <a href="https://gordon-guojun-zhang.github.io/">Guojun Zhang*</a>, <a href="https://ece.uwaterloo.ca/~s232sun/">Sun Sun</a>, <a href="https://uniweb.uottawa.ca/members/4499/profile">Hongyu Guo</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -144,7 +148,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/cm-gan.jpg"><img src="img/cm-gan.jpg" class="pub-img"></a>
+            <a href="img/cm-gan.jpg"><img src="img/cm-gan.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">CM-GAN: Stablizing GAN Training with Consistency Models</div>
               <div class="pub-authors"><a href="https://haoyelu.github.io/">Haoye Lu</a>, <strong>Yiwei Lu</strong>, <a href="https://dihjiang.github.io/">Dihong Jiang</a>, <a href="https://scholar.google.com/citations?user=35D6WQsAAAAJ&hl=en">Spencer Ryan Szabados</a>, <a href="https://ece.uwaterloo.ca/~s232sun/">Sun Sun</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -154,7 +158,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/gc.jpg"><img src="img/gc.jpg" class="pub-img"></a>
+            <a href="img/gc.jpg"><img src="img/gc.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Exploring the Limits of Model-Targeted Indiscriminate Data Poisoning Attacks</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="http://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -163,8 +167,9 @@
             </div>
           </article>
 
+          <h3 class="pub-year">2022</h3>
           <article class="publication-item">
-            <a href="img/poison.png"><img src="img/poison.png" class="pub-img"></a>
+            <a href="img/poison.png"><img src="img/poison.png" class="pub-img" alt="Indiscriminate data poisoning figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Indiscriminate Data Poisoning Attacks on Neural Networks</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="http://www.gautamkamath.com/">Gautam Kamath</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -173,8 +178,9 @@
             </div>
           </article>
 
+          <h3 class="pub-year">2021</h3>
           <article class="publication-item">
-            <a href="img/fmicl.jpg"><img src="img/fmicl.jpg" class="pub-img"></a>
+            <a href="img/fmicl.jpg"><img src="img/fmicl.jpg" class="pub-img" alt="f-MICL figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">f-mutual Information Contrastive Learning</div>
               <div class="pub-authors"><a href="https://gordon-guojun-zhang.github.io/">Guojun Zhang*</a>, <strong>Yiwei Lu*</strong>, <a href="https://ece.uwaterloo.ca/~s232sun/">Sun Sun</a>, <a href="https://uniweb.uottawa.ca/members/4499/profile">Hongyu Guo</a>, <a href="https://cs.uwaterloo.ca/~y328yu/">Yaoliang Yu</a></div>
@@ -184,7 +190,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/adacrowd.jpg"><img src="img/adacrowd.jpg" class="pub-img"></a>
+            <a href="img/adacrowd.jpg"><img src="img/adacrowd.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">AdaCrowd: Unlabeled Scene Adaptation for Crowd Counting</div>
               <div class="pub-authors"><a href="http://www.cs.umanitoba.ca/~kumarkm/">Mahesh Kumar Krishna Reddy</a>, <a href="http://www.cs.umanitoba.ca/~mrochan/">Mrigank Rochan</a>, <strong>Yiwei Lu</strong>, <a href="http://www.cs.umanitoba.ca/~ywang/">Yang Wang</a></div>
@@ -193,8 +199,9 @@
             </div>
           </article>
           
+          <h3 class="pub-year">2020</h3>
           <article class="publication-item">
-            <a href="img/Intro.jpg"><img src="img/Intro.jpg" class="pub-img"></a>
+            <a href="img/Intro.jpg"><img src="img/Intro.jpg" class="pub-img" alt="Few-shot anomaly detection figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Few-shot Scene-adaptive Anomaly Detection</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="https://www.facebook.com/yu.frankf">Frank Yu</a>, <a href="http://www.cs.umanitoba.ca/~kumarkm/">Mahesh Kumar Krishna Reddy</a>, <a href="http://www.cs.umanitoba.ca/~ywang/">Yang Wang</a></div>
@@ -204,7 +211,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/structure.jpg"><img src="img/structure.jpg" class="pub-img"></a>
+            <a href="img/structure.jpg"><img src="img/structure.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Structure Learning with Similarity Preserving</div>
               <div class="pub-authors"><a href="https://sites.google.com/site/zhaokanghomepage/">Zhao Kang</a>, <a href="https://en.uestc.edu.cn/">Xiao Lu</a>, <strong>Yiwei Lu</strong>, <a href="https://en.uestc.edu.cn/">Chong Peng</a>, <a href="https://en.uestc.edu.cn/">Wenyu Chen</a>, <a href="https://www.linkedin.com/in/zenglin/">Zenglin Xu</a></div>
@@ -213,8 +220,9 @@
             </div>
           </article>
 
+          <h3 class="pub-year">2019</h3>
           <article class="publication-item">
-            <a href="img/Intro1.jpg"><img src="img/Intro1.jpg" class="pub-img"></a>
+            <a href="img/Intro1.jpg"><img src="img/Intro1.jpg" class="pub-img" alt="Future frame prediction figure" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Future Frame Prediction Using Convolutional VRNN for Anomaly Detection</div>
               <div class="pub-authors"><strong>Yiwei Lu</strong>, <a href="http://www.cs.umanitoba.ca/~kumarkm/">Mahesh Kumar Krishna Reddy</a>, <a href="https://shahabty.github.io/">Seyed shahabeddin Nabavi</a>, <a href="http://www.cs.umanitoba.ca/~ywang/">Yang Wang</a></div>
@@ -224,7 +232,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/similarity.jpg"><img src="img/similarity.jpg" class="pub-img"></a>
+            <a href="img/similarity.jpg"><img src="img/similarity.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Similarity Learning via Kernel Preserving Embedding</div>
               <div class="pub-authors"><a href="https://sites.google.com/site/zhaokanghomepage/">Zhao Kang</a>, <strong>Yiwei Lu</strong>, <a href="https://en.uestc.edu.cn/">Yuanzhang Su</a>, <a href="https://en.uestc.edu.cn/">Changsheng Li</a>, <a href="https://www.linkedin.com/in/zenglin/">Zenglin Xu</a></div>
@@ -234,7 +242,7 @@
           </article>
 
           <article class="publication-item">
-            <a href="img/ss.jpg"><img src="img/ss.jpg" class="pub-img"></a>
+            <a href="img/ss.jpg"><img src="img/ss.jpg" class="pub-img" loading="lazy"></a>
             <div class="pub-details">
               <div class="pub-title">Semantic Segmentation in Compressed Videos</div>
               <div class="pub-authors"><strong>Yiwei Lu*</strong>, <a href="http://www.cs.umanitoba.ca">Ang Li*</a>, <a href="http://www.cs.umanitoba.ca/~ywang/">Yang Wang</a></div>
@@ -256,7 +264,7 @@
       </footer>
     </main>
   </div>
-  <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+  <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
   <script>
     const toggleBtn = document.getElementById('theme-toggle');
     const body = document.body;

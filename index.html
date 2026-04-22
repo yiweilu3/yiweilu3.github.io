@@ -8,15 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="icon" type="image/png" href="img/Yiwei_headshot.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="wrapper">
     <aside class="sidebar">
       <div class="sidebar-content">
-        <a href="img/Yiwei_headshot.png"><img src="img/Yiwei_headshot.png" alt="profile photo" class="profile-image"></a>
+        <a href="img/Yiwei_headshot.png"><img src="img/Yiwei_headshot.png" alt="Portrait photo of Yiwei Lu" class="profile-image"></a>
         
         <div class="contact-info">
           <div class="contact-email">
@@ -33,7 +34,7 @@
       </div>
     </aside>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <header class="main-header">
         <h1>Yiwei Lu</h1>
         <nav class="main-nav">
@@ -81,7 +82,7 @@
       </footer>
     </main>
   </div>
-  <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+  <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
   <script>
     const toggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
