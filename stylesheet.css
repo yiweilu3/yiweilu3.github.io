@@ -189,8 +189,8 @@ button:focus-visible {
   text-decoration: underline;
 }
 
-#about, #research-interests, #news, #publications, #thesis {
-  margin-bottom: 2em;
+#intro, #education, #news, #publications, #thesis {
+  margin-bottom: 2.5em;
 }
 
 header h1 {
@@ -208,12 +208,12 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   color: #2c3e50;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  margin-top: 0;
+  letter-spacing: -0.005em;
 }
 
 a {
@@ -387,6 +387,31 @@ footer {
   text-decoration: underline;
 }
 
+/* Recruitment callout */
+.recruit-callout {
+  background: #fdecea;
+  border-left: 4px solid #c0392b;
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0 0 0;
+  color: #5b1a14;
+}
+.recruit-callout p {
+  margin: 0;
+  line-height: 1.55;
+}
+.recruit-callout strong {
+  color: #c0392b;
+}
+.recruit-callout a {
+  color: #c0392b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.recruit-callout a:hover {
+  color: #8a2a1c;
+}
+
 .news-list {
   max-height: 340px;
   overflow-y: auto;
@@ -529,4 +554,16 @@ footer {
 }
 .dark-mode .contact-email a {
   color: #8ab4f8;
+}
+.dark-mode .recruit-callout {
+  background: #2a1818;
+  border-left-color: #ff8a80;
+  color: #f6c8c4;
+}
+.dark-mode .recruit-callout strong,
+.dark-mode .recruit-callout a {
+  color: #ff8a80;
+}
+.dark-mode .recruit-callout a:hover {
+  color: #ffb3ad;
 }
