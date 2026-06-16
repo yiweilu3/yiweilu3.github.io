@@ -366,6 +366,27 @@ footer {
   }
 }
 
+.research-list {
+  padding-left: 22px;
+}
+.research-list li {
+  margin-bottom: 14px;
+}
+.research-list sup {
+  font-size: 0.72em;
+  font-weight: 600;
+  margin-left: 1px;
+}
+.research-list sup a {
+  color: #1772d0;
+  text-decoration: none;
+  padding: 0 1px;
+}
+.research-list sup a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
 .news-list {
   max-height: 340px;
   overflow-y: auto;
