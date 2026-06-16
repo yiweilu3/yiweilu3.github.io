@@ -123,8 +123,8 @@ button:focus-visible {
 }
 
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -195,8 +195,9 @@ button:focus-visible {
 
 header h1 {
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
+  letter-spacing: -0.01em;
 }
 
 section {
@@ -222,6 +223,30 @@ a {
 }
 a:hover {
   color: #f09228;
+}
+
+/* Inline content links: subtle dotted underline so they're discoverable
+   without the heavy solid-blue look. Scoped to paragraphs and list items
+   inside main content; sidebar, nav, callout, and pub thumbnails are
+   excluded so their existing styles win. */
+.main-content section p > a,
+.main-content section li > a,
+.main-content section td > a {
+  border-bottom: 1px dotted rgba(23, 114, 208, 0.4);
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.main-content section p > a:hover,
+.main-content section li > a:hover,
+.main-content section td > a:hover {
+  border-bottom-color: #f09228;
+}
+.recruit-callout a,
+.pub-img,
+.pub-title a,
+.research-list sup a {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 
 ul {
@@ -332,7 +357,7 @@ footer {
     text-align: left;
   }
   .profile-image {
-    max-width: 200px;
+    max-width: 180px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -448,10 +473,9 @@ footer {
   flex-direction: column;
   word-break: break-all;
 }
-.contact-email a {
-  color: #0056b3;
+.contact-email span:not(:first-child) {
+  color: #444;
   font-weight: 600;
-  text-decoration: underline;
 }
 
 /* Floating Theme Toggle Button */
@@ -566,4 +590,14 @@ footer {
 }
 .dark-mode .recruit-callout a:hover {
   color: #ffb3ad;
+}
+.dark-mode .main-content section p > a,
+.dark-mode .main-content section li > a,
+.dark-mode .main-content section td > a {
+  border-bottom-color: rgba(138, 180, 248, 0.4);
+}
+.dark-mode .main-content section p > a:hover,
+.dark-mode .main-content section li > a:hover,
+.dark-mode .main-content section td > a:hover {
+  border-bottom-color: #f09228;
 }
