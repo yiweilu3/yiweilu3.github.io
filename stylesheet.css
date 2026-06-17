@@ -348,15 +348,39 @@ li {
   letter-spacing: 0.01em;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
-.pub-tag:hover {
-  background: #eef4fa;
-  color: #1772d0;
-  border-color: #1772d0;
-}
+
+/* Per-topic chip colors. Light mode: 50 bg / 800 text / 100 border. */
+.pub-tag[data-topic="data-poisoning"]      { background: #FCEBEB; color: #791F1F; border-color: #F7C1C1; }
+.pub-tag[data-topic="llm"]                 { background: #EEEDFE; color: #3C3489; border-color: #CECBF6; }
+.pub-tag[data-topic="memorization"]        { background: #FAEEDA; color: #633806; border-color: #FAC775; }
+.pub-tag[data-topic="machine-unlearning"]  { background: #EAF3DE; color: #27500A; border-color: #C0DD97; }
+.pub-tag[data-topic="data-protection"]     { background: #E1F5EE; color: #085041; border-color: #9FE1CB; }
+.pub-tag[data-topic="diffusion-models"]    { background: #FBEAF0; color: #72243E; border-color: #F4C0D1; }
+.pub-tag[data-topic="contrastive-learning"]{ background: #FAECE7; color: #712B13; border-color: #F5C4B3; }
+.pub-tag[data-topic="quantization"]        { background: #E6F1FB; color: #0C447C; border-color: #B5D4F4; }
+.pub-tag[data-topic="anomaly-detection"]   { background: #F1EFE8; color: #444441; border-color: #D3D1C7; }
+.pub-tag[data-topic="computer-vision"]     { background: #F1EFE8; color: #444441; border-color: #D3D1C7; }
+
+.pub-tag[data-topic="data-poisoning"]:hover      { background: #F7C1C1; border-color: #A32D2D; }
+.pub-tag[data-topic="llm"]:hover                 { background: #CECBF6; border-color: #534AB7; }
+.pub-tag[data-topic="memorization"]:hover        { background: #FAC775; border-color: #854F0B; }
+.pub-tag[data-topic="machine-unlearning"]:hover  { background: #C0DD97; border-color: #3B6D11; }
+.pub-tag[data-topic="data-protection"]:hover     { background: #9FE1CB; border-color: #0F6E56; }
+.pub-tag[data-topic="diffusion-models"]:hover    { background: #F4C0D1; border-color: #993556; }
+.pub-tag[data-topic="contrastive-learning"]:hover{ background: #F5C4B3; border-color: #993C1D; }
+.pub-tag[data-topic="quantization"]:hover        { background: #B5D4F4; border-color: #185FA5; }
+.pub-tag[data-topic="anomaly-detection"]:hover   { background: #D3D1C7; border-color: #5F5E5A; }
+.pub-tag[data-topic="computer-vision"]:hover     { background: #D3D1C7; border-color: #5F5E5A; }
+
+/* Active filter state: single accent so 'selected' is unambiguous regardless of topic color. */
 .pub-tag.active {
-  background: #1772d0;
-  color: #fff;
-  border-color: #1772d0;
+  background: #1772d0 !important;
+  color: #fff !important;
+  border-color: #1772d0 !important;
+}
+.pub-tag.active:hover {
+  background: #1457a3 !important;
+  border-color: #1457a3 !important;
 }
 
 .pub-filter-bar {
@@ -766,15 +790,38 @@ footer {
   border-color: #444;
   color: #ccc;
 }
-.dark-mode .pub-tag:hover {
-  background: #232526;
-  color: #8ab4f8;
-  border-color: #8ab4f8;
-}
+
+/* Per-topic chip colors in dark mode: 900 bg / 100 text / 600 border. */
+.dark-mode .pub-tag[data-topic="data-poisoning"]      { background: #501313; color: #F7C1C1; border-color: #A32D2D; }
+.dark-mode .pub-tag[data-topic="llm"]                 { background: #26215C; color: #CECBF6; border-color: #534AB7; }
+.dark-mode .pub-tag[data-topic="memorization"]        { background: #412402; color: #FAC775; border-color: #854F0B; }
+.dark-mode .pub-tag[data-topic="machine-unlearning"]  { background: #173404; color: #C0DD97; border-color: #3B6D11; }
+.dark-mode .pub-tag[data-topic="data-protection"]     { background: #04342C; color: #9FE1CB; border-color: #0F6E56; }
+.dark-mode .pub-tag[data-topic="diffusion-models"]    { background: #4B1528; color: #F4C0D1; border-color: #993556; }
+.dark-mode .pub-tag[data-topic="contrastive-learning"]{ background: #4A1B0C; color: #F5C4B3; border-color: #993C1D; }
+.dark-mode .pub-tag[data-topic="quantization"]        { background: #042C53; color: #B5D4F4; border-color: #185FA5; }
+.dark-mode .pub-tag[data-topic="anomaly-detection"]   { background: #2C2C2A; color: #D3D1C7; border-color: #5F5E5A; }
+.dark-mode .pub-tag[data-topic="computer-vision"]     { background: #2C2C2A; color: #D3D1C7; border-color: #5F5E5A; }
+
+.dark-mode .pub-tag[data-topic="data-poisoning"]:hover      { background: #791F1F; border-color: #E24B4A; }
+.dark-mode .pub-tag[data-topic="llm"]:hover                 { background: #3C3489; border-color: #7F77DD; }
+.dark-mode .pub-tag[data-topic="memorization"]:hover        { background: #633806; border-color: #BA7517; }
+.dark-mode .pub-tag[data-topic="machine-unlearning"]:hover  { background: #27500A; border-color: #639922; }
+.dark-mode .pub-tag[data-topic="data-protection"]:hover     { background: #085041; border-color: #1D9E75; }
+.dark-mode .pub-tag[data-topic="diffusion-models"]:hover    { background: #72243E; border-color: #D4537E; }
+.dark-mode .pub-tag[data-topic="contrastive-learning"]:hover{ background: #712B13; border-color: #D85A30; }
+.dark-mode .pub-tag[data-topic="quantization"]:hover        { background: #0C447C; border-color: #378ADD; }
+.dark-mode .pub-tag[data-topic="anomaly-detection"]:hover   { background: #444441; border-color: #888780; }
+.dark-mode .pub-tag[data-topic="computer-vision"]:hover     { background: #444441; border-color: #888780; }
+
 .dark-mode .pub-tag.active {
-  background: #8ab4f8;
-  color: #181a1b;
-  border-color: #8ab4f8;
+  background: #8ab4f8 !important;
+  color: #181a1b !important;
+  border-color: #8ab4f8 !important;
+}
+.dark-mode .pub-tag.active:hover {
+  background: #b5d4f4 !important;
+  border-color: #b5d4f4 !important;
 }
 .dark-mode .pub-filter-bar {
   background: #232526;
