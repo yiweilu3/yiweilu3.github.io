@@ -66,6 +66,20 @@
             </div>
           </article>
 
+          <article class="publication-item" data-topics="llm,software-testing">
+            <a href="img/casper.png"><img src="img/casper.png" class="pub-img" alt="CASPER overview: test suite grouped into behavioral slices, then ranked by regression risk" loading="lazy"></a>
+            <div class="pub-details">
+              <div class="pub-title">CASPER: Change-Aware Slice Prioritization for Efficient Regression Testing of LLM-based Systems</div>
+              <div class="pub-authors">Biruk Asmare Muse, <a href="https://www.lbriand.info/">Lionel Briand</a>, <strong>Yiwei Lu</strong>, Keheliya Gallaba</div>
+              <div class="pub-venue"><em>Preprint</em> / <a href="https://arxiv.org/abs/2608.00378">arXiv</a></div>
+              <div class="pub-tags">
+                <button type="button" class="pub-tag" data-topic="llm">LLM</button>
+                <button type="button" class="pub-tag" data-topic="software-testing">Software Testing</button>
+              </div>
+              <p>CASPER groups test instances for LLM-based systems into behaviorally consistent slices and ranks them by their likelihood of regressing after a prompt or model change, using execution logs from the original system.</p>
+            </div>
+          </article>
+
           <article class="publication-item" data-topics="data-poisoning,llm">
             <a href="img/sequential.png"><img src="img/sequential.png" class="pub-img" alt="Sequential data poisoning in LLM post-training figure" loading="lazy"></a>
             <div class="pub-details">
@@ -392,7 +406,8 @@
         'contrastive-learning': 'Contrastive Learning',
         'quantization': 'Quantization',
         'anomaly-detection': 'Anomaly Detection',
-        'computer-vision': 'Computer Vision'
+        'computer-vision': 'Computer Vision',
+        'software-testing': 'Software Testing'
       };
 
       const filterBar = document.getElementById('pub-filter-bar');
